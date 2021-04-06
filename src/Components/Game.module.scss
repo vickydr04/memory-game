@@ -1,0 +1,47 @@
+.GameContainer {
+    border: 2px solid #000;
+    margin: 5px;
+}
+
+.ButtonWrapper {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+}
+
+.Button {
+    border: 2px solid #000;
+    background-color: transparent;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    &:focus {
+        outline: none;
+    }
+    span {
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .Bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    .GameContainer {
+        border: none;
+        margin: 0;
+    }
+
+}

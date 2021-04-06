@@ -1,0 +1,40 @@
+.card {
+    position: relative;
+    height: 140px;
+  
+    &Side {
+      height: 140px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      background-size: cover;
+  
+      &Front {
+        background-color: gray;
+      }
+  
+      &Back {
+        background: gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .card {
+      height: 100px;
+    
+      &Side {
+        height: 100px;
+    
+      }
+    }
+    
+  }
